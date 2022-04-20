@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whats The Weather</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="currentInfo">
-            <div class="dateContainer">
-                <div class="time">
-                    12:00 <span id="amPm"> PM</span>
-                </div>
-                <div class="date" id="date">
-                    Monday, April 18 2022
-                </div>
-                <div class="current" id="current">
-                    <div class="weatherItem">
-                        <div>Humidity</div>
-                        <div>95%</div>
-                    </div>
-                    <div class="weatherItem">
-                        <div>Pressure</div>
-                        <div>121</div>
-                    </div>
-                    <div class="weatherItem">
-                        <div>Wind Speed</div>
-                        <div>4</div>
-                    </div>
-                </div>
+      <div class="currentInfo">
+        <div class="dateContainer">
+          <div class="time">12:00 <span id="amPm"> PM</span></div>
+          <div class="date" id="date">Monday, April 18 2022</div>
+          <div class="current" id="current">
+            <div class="weatherItem">
+              <div>Humidity</div>
+              <div>95%</div>
             </div>
+            <div class="weatherItem">
+              <div>Pressure</div>
+              <div>121</div>
+            </div>
+            <div class="weatherItem">
+              <div>Wind Speed</div>
+              <div>4</div>
+            </div>
+          </div>
         </div>
+
+        <div class="cityContainer">
+          <div class="timeZone" id="timeZone">
+            <div class="country" id="country"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="futureForecast">
+        <div class="today" id="currentTemp">
+          <img src="" alt="Weather Icon" class="weatherIcon" />
+          <div class="day">Monday</div>
+          <div class="temp">Day - 25&#176; C</div>
+          <div class="temp">Night - 25&#176; C</div>
+        </div>
+
+        <div class="weatherForecast" id="weatherForecast">
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+          <div class="item">
+              <div class="day">Tuesday</div>
+            <img src="" alt="Weather Icon" class="weatherIcon" />
+            <div class="temp">Day - 25&#176; C</div>
+            <div class="temp">Night - 25&#176; C</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./weather.js"></script>
-</body>
+  </body>
 </html>
