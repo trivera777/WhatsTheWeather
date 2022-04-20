@@ -10,5 +10,7 @@ body {
     background:url(https://images.pexels.com/photos/1287083/pexels-photo-1287083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
