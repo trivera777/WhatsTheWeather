@@ -10,8 +10,9 @@
   <body>
     <div class="container">
       <div class="currentInfo">
+
         <div class="dateContainer">
-          <div class="time">12:00 <span id="amPm"> PM</span></div>
+          <div class="time" id="time">12:00 <span id="amPm"> PM</span></div>
           <div class="date" id="date">Monday, April 18 2022</div>
           <div class="current" id="current">
             <div class="weatherItem">
@@ -28,13 +29,12 @@
             </div>
           </div>
         </div>
-
         <div class="cityContainer">
-          <div class="timeZone" id="timeZone">
-            <div class="country" id="country"></div>
+          <div class="timeZone" id="timeZone">Denver - CO</div>
+            <div class="country" id="country">USA</div>
           </div>
         </div>
-      </div>
+
 
       <div class="futureForecast">
         <div class="today" id="currentTemp">
@@ -84,6 +84,7 @@
         </div>
       </div>
     </div>
+</div>
 
     <script src="./weather.js"></script>
   </body>
