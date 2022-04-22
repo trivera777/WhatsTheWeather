@@ -25,3 +25,24 @@ body {
     justify-content: space-between;
     flex-wrap: wrap ;
 }
+
+.dateContainer #time {
+    font-size: 70px;
+}
+
+.dateContainer #amPm {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.dateContainer .date {
+    font-size: 30px;
+}
+
+.cityContainer {
+    text-align: end;
+}
+.cityContainer .timeZone {
+    font-size: 30px;
+    font-weight: 100;
+}
