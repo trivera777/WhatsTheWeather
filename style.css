@@ -77,6 +77,12 @@ body {
     justify-content: center;
 }
 
+.futureForecast .today .day {
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
 .futureForecast .weatherForecast {
     display: flex;
 }
