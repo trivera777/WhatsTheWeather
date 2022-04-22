@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -44,5 +44,20 @@ body {
 }
 .cityContainer .timeZone {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 200;
+}
+
+.cityContainer .country {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.currentInfo .others {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentInfo .others .weatherItem {
+    display: flex;
+    justify-content: space-between;
 }
