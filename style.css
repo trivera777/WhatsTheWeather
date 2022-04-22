@@ -66,3 +66,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.futureForecast {
+    background: rgba(24, 24, 27, 0.8);
+    padding: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.futureForecast .weatherForecast {
+    display: flex;
+}
