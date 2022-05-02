@@ -1,3 +1,7 @@
 const timeEl = document.getElementById('time')
 const dateEl = document.getElementById('date')
 const currentWeatherItemsEl = document.getElementById('currentWeatherItems')
+const timezone = document.getElementById('timeZone')
+const countryEl = document.getElementById('country')
+const weatherForecastEl = document.getElementById('weatherForecast')
+const currentTempEl = document.getElementById('currentTemp')
