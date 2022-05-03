@@ -32,3 +32,5 @@ function getWeatherData(){
         console.log(success);
     })
 }
+
+getWeatherData()
