@@ -13,4 +13,9 @@ setInterval(() => {
     const day = time.getDay()
     const hour = time.getHours()
     const minutes = time.getMinutes()
+    const hours24 = hour >= 13 ? hour %12: hour;
+    const amPm = hours >=12 ? 'PM' : 'AM'
+
+    timeEl.innerHTML = hours24 + minutes + " " + `<span id="amPm">${amPm}</span>`
+
 }, 1000);
