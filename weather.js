@@ -27,10 +27,19 @@ setInterval(() => {
 
 }, 1000);
 
+getWeatherData()
+
 function getWeatherData(){
     navigator.geolocation.getCurrentPosition((success) => {
         console.log(success);
+        let {latitude, longitude } = success.coords;
+
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=
+        ${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=
+        ${APIKEY}`)
+        .then(res => res.json()).then(data => {
+            console.log(data);
+            showWeatherData();
+        })
     })
 }
-
-getWeatherData()
