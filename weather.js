@@ -1,6 +1,6 @@
 const timeEl = document.getElementById("time");
 const dateEl = document.getElementById("date");
-const currentWeatherItemsEl = document.getElementById("currentWeatherItems");
+const currentWeatherItemsEl = document.getElementById("currentWeather");
 const timezone = document.getElementById("timeZone");
 const countryEl = document.getElementById("country");
 const weatherForecastEl = document.getElementById("weatherForecast");
@@ -39,17 +39,15 @@ setInterval(() => {
   const day = time.getDay();
   const hour = time.getHours();
   const minutes = time.getMinutes();
-  const hours24 = hour >= 13 ? hour % 12 : hour;
+  const hours24 = hour >= 13 ? hour %12: hour
   const amPm = hour >= 12 ? "PM" : "AM";
 
-  timeEl.innerHTML =
-    hours24 + ":" + minutes + " " + `<span id="amPm">${amPm}</span>`;
+  timeEl.innerHTML = hours24 + ":" + minutes + `<span id="amPm">${amPm}</span>`;
 
   dateEl.innerHTML = days[day] + ", " + date + " " + months[month];
 }, 1000);
 
 getWeatherData();
-
 function getWeatherData() {
   navigator.geolocation.getCurrentPosition((success) => {
     console.log(success);
@@ -57,15 +55,13 @@ function getWeatherData() {
 
     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=
         ${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=
-        ${APIKEY}`)
-      .then((res) => res.json())
+        ${APIKEY}`).then((res) => res.json())
       .then((data) => {
         console.log(data);
-        showWeatherData();
+        showWeatherData(data);
       });
   });
 }
-
 function showWeatherData(data) {
   let { humidty, pressure, sunrise, sunset, windSpeed } = data.current;
 
@@ -84,7 +80,7 @@ function showWeatherData(data) {
     </div>
     <div class="weatherItem">
         <div>Sunrise</div>
-        <div>${sunrise}</div>
+        <div>${window.moment(sunrise).format('HH:mm a')}</div>
     </div>
     <div class="weatherItem">
         <div>Sunset</div>
