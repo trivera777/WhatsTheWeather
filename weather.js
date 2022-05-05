@@ -67,7 +67,7 @@ function getWeatherData() {
 }
 
 function showWeatherData(data) {
-  let { humidty, pressure, sunrise, windSpeed } = data.current;
+  let { humidty, pressure, sunrise, sunset, windSpeed } = data.current;
 
   currentWeatherItemsEl.innerHTML =
   ` <div class="weatherItem">
@@ -83,8 +83,12 @@ function showWeatherData(data) {
         <div>${windSpeed}</div>
     </div>
     <div class="weatherItem">
-        <div>Wind Speed</div>
-        <div>${windSpeed}</div>
+        <div>Sunrise</div>
+        <div>${sunrise}</div>
+    </div>
+    <div class="weatherItem">
+        <div>Sunset</div>
+        <div>${sunset}</div>
     </div>
     `;
 }
