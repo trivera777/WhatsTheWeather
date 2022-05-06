@@ -54,7 +54,7 @@ function getWeatherData() {
     let { latitude, longitude } = success.coords;
 
     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=
-        ${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=
+        ${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=
         ${APIKEY}`).then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -63,12 +63,12 @@ function getWeatherData() {
   });
 }
 function showWeatherData(data) {
-  let { humidty, pressure, sunrise, sunset, windSpeed } = data.current;
+  let { humidity, pressure, sunrise, sunset, windSpeed } = data.current;
 
   currentWeatherItemsEl.innerHTML =
   ` <div class="weatherItem">
         <div>Humidity</div>
-        <div>${humidty}</div>
+        <div>${humidity}</div>
     </div>
     <div class="weatherItem">
         <div>Pressure</div>
