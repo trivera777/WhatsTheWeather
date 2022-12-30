@@ -30,7 +30,7 @@ const months = [
   "Dec",
 ];
 
-const APIKEY = "6f10f5840c5d2d00afdcc01e2fa2a463";
+const API_key = "6f10f5840c5d2d00afdcc01e2fa2a463";
 
 setInterval(() => {
   const time = new Date();
@@ -53,9 +53,7 @@ function getWeatherData() {
     console.log(success);
     let { latitude, longitude } = success.coords;
 
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=
-        ${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=
-        ${APIKEY}`).then((res) => res.json())
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${API_key}${API_key}`).then((res) => res.json())
       .then((data) => {
         console.log(data);
         showWeatherData(data);
