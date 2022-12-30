@@ -73,8 +73,10 @@ body {
     padding: fixed;
     bottom: 0;
     display: flex;
+    height: 250px;
     width: 100%;
     align-items: center;
+    border-radius: 10px;
     justify-content: center;
 }
 
