@@ -54,6 +54,7 @@ body {
 
 .currentInfo .others {
     display: flex;
+    width: 250px;
     flex-direction: column;
     background: rgba(24,24,27,0.6);
     padding: 20px;
