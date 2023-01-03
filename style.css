@@ -14,7 +14,7 @@ body {
 
 .container {
     background-color: rgba(24,24,27,0.6);
-    padding: 1em;
+    padding: 2em;
     margin: 1em;
     border-radius: 30px;
     border: black .5px solid;
@@ -23,11 +23,34 @@ body {
     width: 100%;
     color: #fff;
     max-width: 420px;
-    font-family: 'Poppins', sans-serif;
+}
+
+.searchbutton {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.searchbutton:hover{
+    cursor: pointer;
 }
 
 .icon {
     height: 15px;
     justify-items: center;
     align-items: center;
+    -webkit-filter: invert(100%);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: .5em;
+    border-radius: 15px;
+    border: none;
+    outline: none;
 }
