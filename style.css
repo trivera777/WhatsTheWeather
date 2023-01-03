@@ -28,11 +28,14 @@ body {
 .searchbutton {
     border: none;
     border-radius: 50%;
+    height: 33px;
+    width: 33px;
     background-color: transparent;
 }
 
 .searchbutton:hover{
     cursor: pointer;
+    background-color: #7c7c7c2b;
 }
 
 .icon {
