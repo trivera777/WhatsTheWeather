@@ -22,7 +22,7 @@ body {
     align-items: center;
     width: 100%;
     color: #fff;
-    max-width: 420px;
+    max-width: 350px;
 }
 
 .searchbutton {
@@ -35,7 +35,8 @@ body {
 
 .searchbutton:hover{
     cursor: pointer;
-    background-color: #7c7c7c2b;
+    background-color: #96949437;
+    transition: 0.2s ease-in-out;
 }
 
 .icon {
@@ -58,4 +59,5 @@ input {
     outline: none;
     font-family: inherit;
     font-size: 90%;
+    width: 100%;
 }
