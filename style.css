@@ -49,8 +49,10 @@ body {
 }
 
 input {
-    padding: .5em;
+    padding: .5em 1em;
     border-radius: 15px;
     border: none;
     outline: none;
+    font-family: inherit;
+    font-size: 90%;
 }
