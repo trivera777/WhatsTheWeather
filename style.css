@@ -11,13 +11,19 @@ body {
     align-items: center;
     margin: 0;
 }
-/* font-family: 'Poppins', sans-serif; */
 
 .container {
     background-color: rgba(24,24,27,0.6);
     padding: 1em;
+    margin: 1em;
     border-radius: 30px;
     border: black .5px solid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    max-width: 420px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .icon {
