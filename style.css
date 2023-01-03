@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-size: 120%;
 }
 
 .container {
@@ -44,6 +45,9 @@ body {
     justify-items: center;
     align-items: center;
     -webkit-filter: invert(100%);
+}
+.temp {
+    margin: 0;
 }
 
 .search {
