@@ -1,4 +1,3 @@
-// const API_key = "b7aa93d2653535fd86c395597ddcf6c8";
 let weather = {
   "apiKey": "b7aa93d2653535fd86c395597ddcf6c8",
   fetchWeather: function (city) {
@@ -7,14 +6,21 @@ let weather = {
       + city 
       + "&units=imperial&appid=" 
       + this.apiKey
-    ).then((response) => response.json())
-    .then((data) => console.log(data))
-  },
-  displayWeather : function(data){
-
+      ).then((response) => response.json())
+      .then((data) => this.displayWeather(data))
+    },
+    displayWeather : function(data){
+      const {name} = data
+      const {icon, description} = data.weather[0]
+      const {temp, humidity} = data.main
+      const {speed} = data.wind
+      console.log(name, icon, description, humidity, temp, speed)
+      
+    }
   }
-}
 
+// const API_key = "b7aa93d2653535fd86c395597ddcf6c8";
+  
 // const timeEl = document.getElementById("time");
 // const dateEl = document.getElementById("date");
 // const currentWeatherItemsEl = document.getElementById("currentWeather");
