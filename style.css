@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    font-size: 120%;
+    font-size: 105%;
 }
 
 .container {
@@ -49,6 +49,12 @@ body {
 /* -webkit-filter: invert(100%); */
 .temp {
     margin: 0;
+    margin-bottom: .4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
 }
 
 .search {
@@ -65,4 +71,9 @@ input {
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
 }
