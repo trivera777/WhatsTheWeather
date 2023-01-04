@@ -26,6 +26,7 @@ body {
     max-width: 350px;
 }
 
+
 .searchbutton {
     margin: .5em;
     border: none;
@@ -41,10 +42,9 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.search {
+img.search {
     height: 15px;
-    justify-items: center;
-    align-items: center;
+    margin: .3em;
 }
 /* -webkit-filter: invert(100%); */
 .temp {
