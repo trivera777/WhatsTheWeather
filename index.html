@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whats The Weather</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./weather.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -15,15 +16,16 @@
           <img src="./search-interface-symbol.png" alt="" class="search" />
         </button>
       </div>
-      <h2 class="city">Denver</h2>
-      <h1 class="temp">31°F</h1>
-      <div class="flex">
-        <img src="" alt="" class="icon" />
-        <div class="description">Cloudy</div>
+      <div class="weather loading">
+        <h2 class="city">Denver</h2>
+        <h1 class="temp">31°F</h1>
+        <div class="flex">
+          <img src="" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">0%</div>
+        <div class="wind">3 mph</div>
       </div>
-      <div class="humidity">0%</div>
-      <div class="wind">3 mph</div>
     </div>
-    <script src="./weather.js" defer></script>
   </body>
 </html>
