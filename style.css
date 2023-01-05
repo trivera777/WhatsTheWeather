@@ -79,4 +79,10 @@ input {
 
 .weather.loading {
   visibility: hidden;
+  max-height: 20px;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: #fff;
 }
